@@ -6,16 +6,21 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Khand">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="posSignIn.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Sign in</h1>
-        <input type="text" placeholder="Username">
-        <input type="password" placeholder="Password">
-        <input type="checkbox"> <label >Stay signed in</label>
-        <button>-></button>
-        <label ><a href="">Can't sign in?</a></label>
-        <label ><a href="">Create account</a></label>
-        </div>
-</body>
+    <div id="document-grid">
+        <main>
+            <h1 id="title">Sign in</h1>
+            <input class="username username-pos" type="text" placeholder="Username">
+            <input class="password password-pos" type="password" placeholder="Password">
+            <div id="remember-me"><span><input class="checkbox-style" type="checkbox"> <label id="remember-me-label">Stay signed in</label></span></div>
+            <div id="btn-pos"><button id="btn-next"></button></div>
+            <label class="help help-pos" ><a href="">Can't sign in?</a></label>
+            <label class="signUp signUp-pos"><a href="">Create account</a></label>
+        </main>
+    </div>
+       
+ </body>   
 </html>
