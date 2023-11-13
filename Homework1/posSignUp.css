@@ -11,6 +11,10 @@
   grid-column: 2;
   grid-row: 3;
 }
+.retype-password-pos {
+  grid-column: 2;
+  grid-row: 5;
+}
 
 .remember-me-pos {
   grid-column: 2;
