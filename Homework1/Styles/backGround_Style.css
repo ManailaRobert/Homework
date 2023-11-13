@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
   }
-body {
+.ViewPort-SignIn-SignUp-Help{
     background-color: antiquewhite;
     background-image: url("../Resorces/background1.png");
     background-size: cover;
