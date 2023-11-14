@@ -1,0 +1,14 @@
+.ViewPort-SignIn-SignUp-Help{
+    background-color: antiquewhite;
+    background-image: url("../Resorces/background1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.page-elements{
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}

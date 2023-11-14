@@ -1,0 +1,18 @@
+#main-header{
+color: white;
+}
+#secondary-header{
+color: white;
+}
+.layer1{
+    background-color: bisque;
+    border: solid;
+    border-width: 5px;
+    border-color: black;
+}
+.layer2{
+    background-color: bisque;
+    border: solid;
+    border-width: 5px;
+    border-color: black;
+}
