@@ -4,9 +4,12 @@
   }
 .ViewPort-SignIn-SignUp-Help{
     background-color: antiquewhite;
-    background-image: url("../Resorces/background1.png");
+    background-image:url("../Resorces/background1.png");
     background-size: cover;
+    backdrop-filter: blur(3px);
+
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
+    overflow: hidden;
   }

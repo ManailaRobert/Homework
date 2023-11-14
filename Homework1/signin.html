@@ -11,22 +11,73 @@
     <link rel="stylesheet" href="./Styles/style.css">
     <link rel="stylesheet" href="./Positions/posSignInSignUp.css">
     <link rel="stylesheet" href="./Styles/SignUP_SignIn_Style.css">
+    <link rel="stylesheet" href="debuger.css">
+
 </head>
 
 <body class="ViewPort-SignIn-SignUp-Help">
-    <div class="document-flex">
-        <main class="container">
-            <h1 class="title-style title-pos">Sign In</h1>
-            <input class="username-style username-pos" type="text" placeholder="Username">
-            <input class="password-style password-pos" type="password" placeholder="Password">
-            <div class="remember-me-style remember-me-pos"><span><input class="checkbox-style" type="checkbox"> <label
-                        id="remember-me-label">Stay signed in</label></span></div>
-            <div class="btn-pos"><button class="btn-sIn-sUp-Style btn-hover"><img src="./Resorces/arrow-right.png" alt=""></button></div>
-            <label class="help-pos"><a href="help.html" class="help-style">Can't sign in?</a></label>
-            <label class="signUp-pos"><a href="signup.html" class="signUp-style">Create account</a></label>
-        </main>
+    <!-- For debuging -->
+    <div class="debug id-1">
+        <Label>Debuger:</Label>
+        <a href="signup.html" class="id-1">Sign up | </a>
+        <a href="signin.html" class="id-1">Sign in | </a>
+        <a href="help.html" class="id-1">Help</a>
     </div>
+   
+    <div class="document-flex">
+        <div class="container-style container-flex">
+            <div class="layers " id="id1">
+    
+                <div class="layer1-pos">
+                    <div class="layer1-0-pos">
+                    
+                        <div class="item1-pos">
+                            <h1 class="title-style title-pos">Sign In</h1>
+                        </div>
+        
+                        <div class="item2-pos">
+                            <input class="username-style username-pos" type="text" placeholder="Username">
+                            <input class="password-style password-pos" type="password" placeholder="Password">
+                        </div>
+    
+                    </div>
+    
+                    <div class="remember-me-style remember-me-pos">
+                        <span class="remember-me-text-pos">
+                            <input class="checkbox-style" type="checkbox"> 
+                            <label class="remember-me-label">Stay signed in</label>
+                        </span>
+                    </div>
+    
+                </div>
+               
+                
+                <div class="layer2-pos">
+                    <div class="btn-pos">
+                        <button class="btn-sIn-sUp-Style btn-hover ">
+                            <!-- <img src="./Resorces/arrow-right.svg"> -->
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 84 84" fill="none">
+                                    <rect width="84" height="84" rx="30" fill="#D9D9D9"/>
+                                    <rect x="2" y="2" width="80" height="80" rx="30" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M50.7628 43.6079H27V40.3921H50.7628L40.5106 30.2739L42.8146 28L57 42L42.8146 56L40.5106 53.7261L50.7628 43.6079Z" fill="#D9D9D9"/>
+                                  </svg>
+                            </a>
+                        </button>
+                    </div>
+        
+                    <div class="item3-pos">
+                        <label class="help-style help-pos"><a href="help.html" class="help-style">CAN'T SIGN IN?</a></label>
+                        <label class="signUp-style signUp-pos"><a href="signup.html" class="signUp-style">SIGN UP</a></label> 
+                    </div>
 
+                </div>
+                
+            </div>
+               
+                
+            </div>
+        </div>
 </body>
 
 </html>

@@ -1,0 +1,10 @@
+.debug{
+    display: flex;
+    gap: 5px;
+}
+
+.id-1,.id-2{
+    text-decoration: none; 
+    color: hsl(0, 0%, 70%);
+    position:static;
+}
