@@ -46,12 +46,22 @@
 }
 
 .btn-sIn-sUp-Style {
-  background-image: url("../Resorces/arrow-right.png");
+  /* background-image: url("../Resorces/arrow-right.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 25px;
   height: 65px;
   width: 65px;
+}
+
+
+.btn-hover:hover{
+  transition: all 0.3s;
+  transform: scale(1.1);
+  background-color: hsl(0, 2%, 92%);
 }
 
 .help-style,
