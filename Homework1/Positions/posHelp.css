@@ -18,14 +18,8 @@ html { height: 100%; }
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-items: center;
   row-gap: 34px;
-}
-
-.pos-main-header{
-  justify-self: center;
-}
-.pos-secondary-header{
-  justify-self: center;
 }
 
 .layer2{
