@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.slider{
+background-color: grey  ;
+border: solid;
+width: 500px;
+display: grid;
+grid-template-rows: 3fr 1fr;
+grid-template-columns: 1fr 2fr 1fr;
+align-items: center;
+justify-items: center;
+}
+img{
+grid-row: 1;
+grid-column: 2;
+border-style: solid;
+height: 300px;
+width: 200px;
+}
+
+.prev{
+    grid-row: 1;
+grid-column: 1;
+}
+.next{
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.button-style{
+    width: 50px;
+    height: 50px;
+    background-color: none;
+    font-size: 24px;
+}
+
+
+.radio-buttons{
+    grid-row: 2;
+    grid-column: 2;
+}
+.radio-buttons-style{
+    background-color: black;
+    accent-color: black;
+    
+}
+
+
