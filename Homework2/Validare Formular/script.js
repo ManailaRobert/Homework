@@ -37,7 +37,7 @@ function validateForm(){
     }
            
 
-
+//password validation
     if(password === ""){
         document.getElementById("password-error").innerHTML = "Password Invalid"
     isValid =false
@@ -55,6 +55,7 @@ function validateForm(){
 function keyUpPass(){
     checkPassword(pass.value)
 }
+//strength checker
 function checkPassword(password)
 {
     var strengthBar = document.getElementById("strength")
