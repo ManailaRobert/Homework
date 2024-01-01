@@ -39,6 +39,14 @@ img{
     transition: all 0.3s;
     transform: scale(1.1);
 }
+
+.btn-Username-style:not(:hover),.btn-Password-style:not(:hover),.btn-Email-style:not(:hover){
+    background-color: hsl(0, 0%, 95%);
+    transition: all 0.3s;
+    transform: scale(1);
+}
+
+
 .ref-style{
     text-decoration: none;
 }
