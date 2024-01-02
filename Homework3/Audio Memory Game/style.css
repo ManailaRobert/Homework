@@ -1,0 +1,93 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: beige;
+    row-gap: 15px;
+}
+.container{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    background-color: gray;
+    border-radius: 200px;
+    width: 500px;
+    height: 500px;
+}
+
+button{
+    height: 150px;
+    width:150px;
+    border-radius: 100px;
+    border: solid;
+    border-width: 5px;
+}
+hr{
+    width: 100%;
+}
+.button0{
+background-color: hsl(0, 100%, 35%);
+}
+
+.button1{
+    background-color: hsl(258, 100%, 35%);
+}
+
+.button2{
+background-color: hsl(138, 100%, 35%);
+}
+
+.button3{
+background-color: hsl(76, 100%, 35%);
+}
+
+/* Button clicks */
+.active0{
+    background-color: hsl(0, 100%, 60%);
+}
+    
+.active1{
+        background-color: hsl(258, 100%, 60%);
+}
+    
+.active2{
+    background-color: hsl(138, 100%, 60%);
+}
+    
+.active3{
+    background-color: hsl(76, 100%, 60%);
+}
+
+
+
+.button0:active{
+    background-color: hsl(0, 100%, 60%);
+}
+    
+.button1:active{
+        background-color: hsl(258, 100%, 60%);
+}
+    
+.button2:active{
+    background-color: hsl(138, 100%, 60%);
+}
+    
+.button3:active{
+    background-color: hsl(76, 100%, 60%);
+}
+
+.start{
+    background-color: hsl(0, 0%, 0%);
+    color: white;
+    border: none;
+    height: 50px;
+}
+.start:active{
+    background-color: hsl(0, 0%, 25%);
+
+}
+audio{
+    display: none;
+}
