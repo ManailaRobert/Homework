@@ -3,13 +3,7 @@
     padding: 0px;
 }
 
-/* .aplicationFlex{
-    display: flex;
-    height: 100vh;
-    align-content: center;
-    justify-content: center;
-} */
-
+/* page */
 body{
     display: flex;
     height: 100vh;
@@ -23,37 +17,20 @@ body{
     height: 500px;
     display: flex;
 }
-h4{
-    margin-bottom: 5px;
-    color: white;
-}
-input{
-    background-color: black;
-    padding: 2px;
-    color: white;
-    border: solid;
-    margin-bottom: 3px;
-}
-input::placeholder{
-    color: rgb(194, 193, 193);
-}
+
+/* containers */
 .notesContainer{
     width: 200px;
-    row-gap: 5px;
 }
-.notes{
-    overflow: auto ;
-    overflow-y: auto;
-    height: 468px;
-    width: 180px;
-    background-color: gainsboro;
-    padding: 5px;
-}
-.main{
+.mainContainer{
     width: 600px;
-    row-gap: 5px;
 }
-.buttons{
+.mainContainer .notesContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonsContainer{
     width:200px;
     display: flex;
     flex-direction: column;
@@ -64,9 +41,65 @@ input::placeholder{
     border: solid;
     color: white;
 }
+
+/* Notes container items */
+/* container with notes */
+.notes{
+    overflow: auto ;
+    overflow-y: auto;
+    height: 466px;
+    width: 180px;
+    background-color: gainsboro;
+    padding: 5px;
+}
+
+/* title "Notes" */
+h4{
+    height: 25.5px ;
+    color: white;
+}
+
+.clicked{
+    text-decoration: underline;
+}
+/* Main container items */
+/* container */
+.title{ 
+    display: flex;
+    width:598;
+    padding-right: 17px;
+}
+
+/* title */
+input{
+    background-color: black;
+    padding: 2px;
+    width: 170px;
+    color: white;
+    border: solid;
+}
+
+input::placeholder{
+    color: rgb(194, 193, 193);
+}
+
+/* message label */
+label{
+    width: 100%;
+    text-align: right;
+}
+/* Error/Success messages */
+.messageLabelError{
+    color:red;
+}
+.messageLabelSuccess{
+    color:green;
+}
+
+/* content area  */
 .noteTextArea{
-    height: 462px;
-    width: 570px;
+    height: 465px;
+    width: 577px;
     resize: none;
     background-color:black;
     color: white;
@@ -74,16 +107,9 @@ input::placeholder{
     padding: 5px;
     overflow-y: auto;
 }
+
+/* Button container items*/
 button{
     width: 100px;
 }
 
-.clicked{
-    text-decoration: underline;
-}
-.messageLabelError{
-    color:red;
-}
-.messageLabelSuccess{
-    color:green;
-}
