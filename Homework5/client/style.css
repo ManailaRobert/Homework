@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* .aplicationFlex{
+    display: flex;
+    height: 100vh;
+    align-content: center;
+    justify-content: center;
+} */
+
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    padding: 10px;
+    background-color: gray;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+}
+h4{
+    margin-bottom: 5px;
+    color: white;
+}
+input{
+    background-color: black;
+    padding: 2px;
+    color: white;
+    border: solid;
+    margin-bottom: 3px;
+}
+input::placeholder{
+    color: rgb(194, 193, 193);
+}
+.notesContainer{
+    width: 200px;
+    row-gap: 5px;
+}
+.notes{
+    overflow: auto ;
+    overflow-y: auto;
+    height: 468px;
+    width: 180px;
+    background-color: gainsboro;
+    padding: 5px;
+}
+.main{
+    width: 600px;
+    row-gap: 5px;
+}
+.buttons{
+    width:200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+    background-color: black;
+    border: solid;
+    color: white;
+}
+.noteTextArea{
+    height: 462px;
+    width: 570px;
+    resize: none;
+    background-color:black;
+    color: white;
+    border: solid;
+    padding: 5px;
+    overflow-y: auto;
+}
+button{
+    width: 100px;
+}
+
+.clicked{
+    text-decoration: underline;
+}
+.messageLabelError{
+    color:red;
+}
+.messageLabelSuccess{
+    color:green;
+}
