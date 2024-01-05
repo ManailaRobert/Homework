@@ -90,15 +90,7 @@ def createNote():
             }
             response = jsonify(response)
             response.headers.add("Access-Control-Allow-Origin","*")
-            return response,400
-        if len(content) == 0:
-            response = {
-            "message":"Content is empty"
-            }
-            response = jsonify(response)
-            response.headers.add("Access-Control-Allow-Origin","*")
-            return response,400
-        
+            return response, 400     
         
         connection = sqlite3.connect(DB_Path)
         cursor = connection.cursor()
@@ -128,6 +120,7 @@ def createNote():
 def updateNote(noteId):
     body= request.json
     try:
+        
         title = body["title"]
         content = body["content"]
         if len(title) ==0:
@@ -137,16 +130,22 @@ def updateNote(noteId):
             response = jsonify(response)
             response.headers.add("Access-Control-Allow-Origin","*")
             return response,400
-        if len(content) ==0:
-            response = {
-            "message":"Content is empty"
-            }
-            response = jsonify(response)
-            response.headers.add("Access-Control-Allow-Origin","*")
-            return response,400
         
         connection = sqlite3.connect(DB_Path)
         cursor = connection.cursor()
+        #check if the id exists in DB
+        query = "SELECT * from notes where id = ?"
+        cursor.execute(query,(noteId,))
+        selection = cursor.fetchone()
+        if selection == None:
+            connection.close()
+            response = {
+            "message":"Note not selected"
+            }
+            response = jsonify(response)
+            response.headers.add("Access-Control-Allow-Origin","*")
+            return response,404
+        
         query = f""" UPDATE notes
                 SET
                     title=?,
@@ -177,6 +176,17 @@ def  deleteNote(noteId):
     try:
         connection = sqlite3.connect(DB_Path)
         cursor =connection.cursor()
+        query = "SELECT * from notes where id = ?"
+        cursor.execute(query,(noteId,))
+        selection = cursor.fetchone()
+        if selection == None:
+            connection.close()
+            response = {
+            "message":"Note not selected"
+            }
+            response = jsonify(response)
+            response.headers.add("Access-Control-Allow-Origin","*")
+            return response,404
         query = f"DELETE FROM notes WHERE id ={noteId}"
         cursor.execute(query)
         connection.commit()

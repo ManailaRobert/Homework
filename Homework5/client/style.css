@@ -62,6 +62,9 @@ h4{
 .clicked{
     text-decoration: underline;
 }
+p:hover{
+    cursor:default;
+}
 /* Main container items */
 /* container */
 .title{ 
@@ -79,8 +82,11 @@ input{
     border: solid;
 }
 
-input::placeholder{
+input::placeholder {
     color: rgb(194, 193, 193);
+}
+textarea::placeholder{
+    color: rgb(194, 193, 193); 
 }
 
 /* message label */
@@ -90,10 +96,10 @@ label{
 }
 /* Error/Success messages */
 .messageLabelError{
-    color:red;
+    color:rgb(255, 0, 0);
 }
 .messageLabelSuccess{
-    color:green;
+    color:rgb(0, 231, 0);
 }
 
 /* content area  */
