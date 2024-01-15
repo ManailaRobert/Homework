@@ -22,7 +22,7 @@ function next(){
     if(selectedIndex >5)
         selectedIndex = 1;
     radioButton = document.getElementById(selectedIndex.toString())
-    img.src=images[selectedIndex]
+    img.src = images[selectedIndex]
     radioButton.checked= true
 }
 
